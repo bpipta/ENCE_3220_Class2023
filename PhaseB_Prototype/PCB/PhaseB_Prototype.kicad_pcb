@@ -812,10 +812,10 @@
       (net 4 "+5V") (pinfunction "COM_1") (pintype "passive") (tstamp f074c7fa-689d-4d7f-af7e-d71b487f4ad1))
     (pad "D1" smd rect (at 7.15 2.5 270) (size 1.5 2) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 67 "unconnected-(S1-COM_2-PadD1)") (pinfunction "COM_2") (pintype "passive+no_connect") (tstamp 6efca661-5689-4ea7-95f3-27aba7ea45a7))
-    (model "PTS125SM43SMTR21M_LFS.stp"
+    (model "${KIPRJMOD}/Components/PTS125_SMD_Button/STEP/PTS125_SMD_Button.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 90))
     )
   )
 
@@ -2668,6 +2668,11 @@
     (pad "3" smd rect (at -3 1.85 180) (size 1 0.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 20 "RST") (pintype "passive") (tstamp 53a5907e-bf06-41b4-91e5-559ca9f072da))
     (pad "4" smd rect (at 3 1.85 180) (size 1 0.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp f489f101-b7c8-4222-a74d-628036558e35))
+    (model "${KIPRJMOD}/Components/PTS526_SMD_Button/STEP/PTS526_SMD_Button.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 180 0))
+    )
   )
 
   (footprint "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" (layer "F.Cu")
@@ -3225,6 +3230,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/Components/PTS125_SMD_Button/STEP/PTS125_SMD_Button.stp"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 180 90))
     )
   )
 
