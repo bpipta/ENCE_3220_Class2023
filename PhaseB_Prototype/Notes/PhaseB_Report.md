@@ -4,7 +4,9 @@ The requirements for this project are fairly simple. We need a timer that can di
 
 # System Design
 
-![Harware Block Diagram](./Hardware_Block_Diagram.pdf)
+<object data="./Hardware_Block_Diagram.pdf" type="application/pdf">
+      <p>Unable to display PDF file. <a href="./Code_Block_Diagram.pdf">Download</a> instead.</p>
+</object>
 
 # Component Selection
 
@@ -24,7 +26,7 @@ A prototype for this board was produced in Phase A, except an Arduino Shield was
 
 # PCB Design
 
-![PCB Schematic](../PCB/schematic/PhaseB_Prototype.pdf)
+![PCB Schematic](../PCB/schematic/PhaseB_Prototype.png)
 
 There is filtering for the input voltage. A reset button connects directly to the microprocessor. The 7 segments display connects to a shift register which itself connects to the microprocessor. The LEDs, user buttons, and buzzer all connect directly to the microprocessor’s GPIO pins. Some pins were also broken out to connect the ESP WiFi module to. An ISP programmer is also attached to some broken out pins for programming.
 
@@ -40,7 +42,9 @@ In order to assemble the board I hand soldered the components to the board. Unfo
 
 The code is formatted with the Mutex – Embedded C Style guidelines. It uses interrupts and flags to achieve concurrency. Three timers are used: Timer 1 keeps track of seconds, Timer 2 controls the rate of the 7-segment display, and Timer 3 controls the rate of the serial read. There is also a start/stop button as well as an increment button. The buttons are attached to interrupts which perform their function within the ISRs.
 
-![Software Block Diagram](./Code_Block_Diagram.pdf)
+<object data="./Code_Block_Diagram.pdf" type="application/pdf">
+      <p>Unable to display PDF file. <a href="./Code_Block_Diagram.pdf">Download</a> instead.</p>
+</object>
 
 # Enclosure Design
 
